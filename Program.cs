@@ -18,6 +18,10 @@ namespace Dealership {
 
       yugo.SetPrice(300);
 
+      // A Static method
+      Console.WriteLine(Car.MakeSound("bang"));
+      // Static methods are called by using the class name, NOT the instance of the class. A static method in C# is a method that keeps only one copy of the method at the Type level, not the object level. This means ALL instances of the class share the same copy of the method and its data. The LAST updated value of the method is shared among all objects of that Type.
+
       Console.WriteLine("Enter maximum price: ");
       string stringMaxPrice = Console.ReadLine();
       int maxPrice = int.Parse(stringMaxPrice);
