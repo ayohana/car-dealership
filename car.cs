@@ -1,3 +1,5 @@
+using System; // we need a System directive in order to allow our setter methods to "set" a private field on an existing object.
+
 namespace Dealership.Models
 {
   public class Car // declaration of a global class
@@ -33,6 +35,11 @@ namespace Dealership.Models
     public bool WorthBuying(int maxPrice)
     {
       return (_price < maxPrice);
+    }
+
+    public void SetPrice(int newPrice)
+    {
+      _price = newPrice;
     }
   }
 }

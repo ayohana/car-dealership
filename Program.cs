@@ -16,6 +16,8 @@ namespace Dealership {
       // A List of Car instances
       List<Car> Cars = new List<Car>() { volkswagen, yugo, ford, amc };
 
+      yugo.SetPrice(300);
+
       Console.WriteLine("Enter maximum price: ");
       string stringMaxPrice = Console.ReadLine();
       int maxPrice = int.Parse(stringMaxPrice);
